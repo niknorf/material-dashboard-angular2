@@ -18,7 +18,7 @@ jobs:
           record: true
           parallel: true
           group: "material-dashboard-angular2"
-          spec: "cypress/integration/"
+          spec: "cypress/integration/**/*"
           config-file: cypress.config.ts
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
