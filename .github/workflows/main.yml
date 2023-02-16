@@ -19,3 +19,4 @@ jobs:
           parallel: true
           group: "material-dashboard-angular2"
           spec: "cypress/integration/**/*"
+          config-file: cypress.config.ts
