@@ -13,12 +13,12 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: npm run start:prod
-          wait-on: 'http://localhost:4200'
+          wait-on: "http://localhost:4200"
           wait-on-timeout: 300
           record: true
           parallel: true
-          group: 'material-dashboard-angular2'
-          spec: 'cypress/e2e/dashboard-tests/**/*'
+          group: "material-dashboard-angular2"
+          spec: "cypress/e2e/dashboard-tests/**/*"
           config-file: cypress.config.ts
-          env: 'CYPRESS_baseUrl=http://localhost:4200',
-            CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
