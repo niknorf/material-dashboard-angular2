@@ -21,5 +21,4 @@ jobs:
           spec: "cypress/e2e/dashboard-tests/**/*"
           config-file: cypress.config.ts
         env:
-          CYPRESS_baseUrl: http://localhost:4200
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
