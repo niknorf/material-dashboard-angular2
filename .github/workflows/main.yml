@@ -12,7 +12,7 @@ jobs:
       - name: Cypress run production
         uses: cypress-io/github-action@v2
         with:
-          start: npm run start:prod
+          start: npm run start --production
           wait-on: "http://localhost:4200"
           wait-on-timeout: 300
           record: true
