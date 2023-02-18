@@ -13,8 +13,8 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: npm run start
-          wait-on: "http://localhost:4200"
-          wait-on-timeout: 600
+          wait-on: "http://localhost:4200/#"
+          wait-on-timeout: 300
           record: true
           parallel: true
           group: "material-dashboard-angular2"
