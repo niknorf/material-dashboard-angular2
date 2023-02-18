@@ -9,10 +9,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Cypress run production
+      - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          start: npm run start --production
+          start: npm run start
           wait-on: "http://localhost:4200"
           wait-on-timeout: 300
           record: true
