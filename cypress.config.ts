@@ -1,5 +1,5 @@
 module.exports = {
-	projectId: "d6nqq6",
+	projectId: "o5in45",
 
 	e2e: {
 		specPattern: "cypress/e2e/dashboard-tests",
