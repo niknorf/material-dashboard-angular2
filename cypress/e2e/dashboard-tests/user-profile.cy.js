@@ -1,6 +1,6 @@
 context("User profile tests", () => {
 	beforeEach(() => {
-		cy.visit("/user-profile");
+		cy.visit("/#/user-profile");
 	});
 
 	it("Name text exists", () => {

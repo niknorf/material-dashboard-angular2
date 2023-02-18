@@ -3,7 +3,7 @@ module.exports = {
 
 	e2e: {
 		specPattern: "cypress/e2e/dashboard-tests",
-		baseUrl: "http://localhost:4200/#",
+		baseUrl: "http://localhost:4200",
 	},
 
 	component: {
