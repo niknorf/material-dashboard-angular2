@@ -14,6 +14,8 @@ jobs:
         with:
           build: npm run build
           start: npm start
+          wait-on: "http://localhost:4200"
+          wait-on-timeout: 300
           record: true
           parallel: true
         env:
