@@ -3,15 +3,15 @@ context("User profile tests", () => {
 		cy.visit("/#/user-profile");
 	});
 
-	it("Name text exists", () => {
+	it("The correct name text exists", () => {
 		cy.findAllByText("Alec Thompson").should("exist");
 	});
 
-	it("Write in the name input", () => {
+	it("Types in the name input", () => {
 		cy.get('input[data-placeholder="Username"]').type("testuser");
 	});
 
-	it("Should have class focused when clicked", () => {
+	it("Should have class mat-focused when clicked", () => {
 		cy.get(".card-body")
 			.find(".mat-form-field")
 			.eq(3)

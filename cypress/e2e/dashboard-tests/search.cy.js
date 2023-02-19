@@ -1,4 +1,5 @@
 context("Search tests", () => {
+	// Fetches data from the Topcon API and saves it to the formats.json file, before all the tests
 	before(() => {
 		cy.request({
 			url: "https://beta.mdc.topcon.com/v5/formats",
@@ -17,6 +18,6 @@ context("Search tests", () => {
 	});
 
 	after(() => {
-		cy.log("Test log after all tests in the current spec file");
+		cy.log("Test log after all tests are done");
 	});
 });
