@@ -12,9 +12,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          build: npm run build
-          start: npm start
-          wait-on: "127.0.0.1:4200"
+          build: npm run build  --production
+          wait-on: "http://127.0.0.1:4200"
           wait-on-timeout: 800
           record: true
           parallel: true
